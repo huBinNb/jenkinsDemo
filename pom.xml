@@ -12,7 +12,7 @@
 	<build>
 		<finalName>web_demo</finalName>
 		<plugins>
-			<plugin>
+			<!-- <plugin>
 				<inherited>true</inherited>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -21,6 +21,16 @@
 					<source>${compiler.source}</source>
 					<target>${compiler.target}</target>
 					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin> -->
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<fork>true</fork>
+					<executable>D:\Java\jdk1.8.0_131\bin\javac.exe</executable>
 				</configuration>
 			</plugin>
 
